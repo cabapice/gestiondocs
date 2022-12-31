@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+    
+{% block titulo %} Agregar nuevo documento {% endblock %}
+
+{% block contenido %}
+
+<div class="card">
+    <div class="card-header">
+        Crear un documento
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del documento</h4>
+        {% include 'documento/form.html' %}
+
+        
+    </div>
+    <div class="card-footer text-muted">
+       
+    </div>
+</div>
+
+{% endblock %}

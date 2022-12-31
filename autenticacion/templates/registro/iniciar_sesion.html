@@ -1,0 +1,15 @@
+{% extends 'base_autenticacion.html' %}
+{% load static %}
+
+{% block contenido %}
+<h1>Iniciar Sesión</h1>
+{{error}}
+<form action="/autenticacion/iniciar_sesion/" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>
+        Iniciar sesión
+    </button>
+</form>
+
+{% endblock %}

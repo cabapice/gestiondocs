@@ -1,0 +1,17 @@
+{% extends "base_autenticacion.html" %}
+
+{% load static %}
+
+{% block contenido %}
+{{error}}
+<form method="post" action="" style="color: black">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <button type="submit" class="btn btn-success">Regístrate</button>
+
+</form>
+
+{% endblock %}
